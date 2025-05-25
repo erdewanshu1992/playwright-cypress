@@ -1,0 +1,13 @@
+{
+  "name": "@example/screenshots-folder",
+  "version": "1.0.0",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "cypress run"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.1.0",
+    "cypress-mochawesome-reporter": "../../"
+  }
+}
