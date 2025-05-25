@@ -1,0 +1,15 @@
+{
+    "products": [
+      { "id": 1, "name": "HP Laptop", "price": 50000 },
+      { "id": 2, "name": "Dell Inspiron", "price": 60000 },
+      { "id": 3, "name": "Lenovo ThinkPad", "price": 70000 },
+      { "id": 4, "name": "Apple MacBook", "price": 120000 },
+      { "id": 5, "name": "Asus ZenBook", "price": 80000 },
+      { "id": 6, "name": "Acer Aspire", "price": 55000 },
+      { "id": 7, "name": "Microsoft Surface", "price": 90000 },
+      { "id": 8, "name": "Razer Blade", "price": 150000 },
+      { "id": 9, "name": "Samsung Galaxy Book", "price": 75000 },
+      { "id": 10, "name": "LG Gram", "price": 95000 }
+    ]
+  }
+  

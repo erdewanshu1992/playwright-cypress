@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Search</title>
+</head>
+<body>
+  <h1>Search for Products</h1>
+  <input type="text" id="searchBox" placeholder="Search for products..."/>
+  <button id="searchBtn">Search</button>
+  <ul id="results"></ul>
+
+  <script>
+    document.getElementById('searchBtn').addEventListener('click', () => {
+      const query = document.getElementById('searchBox').value;
+      fetch('http://localhost:5000/products')
+        .then(res => res.json())
+        .then(data => {
+          const list = document.getElementById('results');
+          list.innerHTML = '';
+          data.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - ₹${item.price}`;
+            list.appendChild(li);
+          });
+        })
+        .catch(() => {
+          document.getElementById('results').innerHTML = '<li>Error fetching results</li>';
+        });
+    });
+  </script>
+</body>
+</html>
